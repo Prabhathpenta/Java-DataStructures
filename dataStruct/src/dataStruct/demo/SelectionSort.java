@@ -3,8 +3,8 @@ package dataStruct.demo;
 public class SelectionSort {
 	 public static void main (String [] args) {
 		   
-		  int arr[] = {9,5,17,3,1,7,13};
-		  int temp=0;
+		  int arr[] = {9,45,11,3,1,7};
+		  int temp;
 		  int minIndex;
 		  
 		  System.out.print("before sorting :");
@@ -19,12 +19,12 @@ public class SelectionSort {
 				  {
 				  	if(arr[minIndex]>arr[j])        // nums[0]>nums[1] => 9>5					nums[1]>nums[2]=> 5>17 .....false
 				  								
-				  		minIndex =j;            	  //'minIndex= 1'      
+				  		minIndex =j;            	  //'minIndex= 5'      
 				  }
 				  	
-				  		temp = arr[minIndex];	                                         //temp=nums[1]=5    temp=5					
-				  		arr[minIndex] = arr[i];	 									 // nums[1]=nums[0]   nums[1]=9
-				  		arr[i] = temp;													//                   nums[0]=5
+				  		temp = arr[minIndex];	   //9                                         				
+				  		arr[minIndex] = arr[i];	 	//9								 
+				  		arr[i] = temp;				//arr[i]= 9							
 				  		
 			 
 		  }
