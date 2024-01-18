@@ -7,7 +7,7 @@ public class SelectionSort {
 		  int temp=0;
 		  int minIndex=-1;
 		  
-		  System.out.println("before sorting");
+		  System.out.print("before sorting :");
 		  for(int num:arr) {
 			  System.out.print(num + " ");
 		  }
@@ -27,16 +27,10 @@ public class SelectionSort {
 				  		arr[minIndex] = arr[i];	 									 // nums[1]=nums[0]   nums[1]=9
 				  		arr[i] = temp;													//                   nums[0]=5
 				  		
-				  	  for(int num:arr) {
-						  System.out.print(num + " ");            
-				  	}
-			  
-
-	  
-		  System.out.println();
+			 
 		  }
 		  System.out.println();
-		  System.out.println("After sorting");
+		  System.out.print("After sorting:");
 		  for(int num:arr) {
 			  System.out.print(num + " ");
 	
