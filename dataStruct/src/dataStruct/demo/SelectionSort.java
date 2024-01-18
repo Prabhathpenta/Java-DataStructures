@@ -5,13 +5,12 @@ public class SelectionSort {
 		   
 		  int arr[] = {9,5,17,3,1,7,13};
 		  int temp=0;
-		  int minIndex=-1;
+		  int minIndex;
 		  
 		  System.out.print("before sorting :");
 		  for(int num:arr) {
 			  System.out.print(num + " ");
 		  }
-		  System.out.println();
 		  
 		  for(int i=0; i<arr.length-1; i++)       //i=0; i=5
 		  {
