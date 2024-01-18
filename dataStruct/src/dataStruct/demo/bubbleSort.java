@@ -10,8 +10,6 @@ public class bubbleSort {
 		  System.out.print( num + " ");
 		  }
 
-
-		  
 		  
 		  for(int i=0; i<arr.length; i++) {
 			  for(int j=1;j<arr.length-i;j++) {
@@ -28,5 +26,5 @@ public class bubbleSort {
 		  for(int num:arr) {
 		  System.out.print( num + " ");
 		  }
-}
+	 }
 }
