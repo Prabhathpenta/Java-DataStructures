@@ -3,7 +3,7 @@ package dataStruct.demo;
 public class MergeSort {
 
 	public static void conquer(int arr[], int Fi ,int mid, int Li) {
-		int merge[] = new int[Li-Fi+1];
+		int merge[] = new int[Li-Fi+1];       //size of array
 		
 		int index1=Fi;
 		int index2=mid+1;
@@ -40,11 +40,13 @@ public class MergeSort {
 	
 	
 	public static void divide(int arr[], int Fi , int Li) {
-		if (Fi >= Li) {                 //if arr{22} then [arr,0,0] => (0 >=0)  condition is true;
+		
+		  if (Fi >= Li) {                 //if arr{22} then [arr,0,0] => (0 >=0)  condition is true;
 			return;
 		}
 		
-		 int mid =Fi + (Li-Fi)/2;
+		 //int mid =Fi + (Li-Fi)/2;
+		  int mid = (Li+Fi)/2;
 		divide(arr, Fi,mid );
 		divide(arr, mid+1, Li);
 		conquer(arr, Fi, mid, Li);
@@ -69,9 +71,11 @@ public class MergeSort {
 		System.out.print(" After sorting : ");
 		for(int num:arr) {
 			System.out.print( num + " ");
-		}
-
-	 
-	 }
-
+			}
+		} 
 }
+	 
+	
+	
+
+	
